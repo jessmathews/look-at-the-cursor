@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look at the cursor Morty!</title>
+    <link href="img/favicon.ico" type="image/x-icon" rel="icon">
+    <script defer src="app.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+
+        }
+        #eyes,#eyes img {
+            position: absolute;
+            max-width: 35px;
+
+        }
+        #anchor {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        footer {
+            font-family: Poppins;
+            align-items:end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="img/morty.png" alt="morty-image" id="anchor">
+        <div id="eyes">
+            <img src="img/eye.png" class="eye" style="top: -85px;right: -86px;">
+            <img src="img/eye.png" class="eye" style="top: -88px;right: -148px;">
+            <img src="img/eye.png" class="eye" style="left: -113px;bottom: -112px;">
+            <img src="img/eye.png" class="eye" style="left: -41px;bottom: -97px;">
+        </div> 
+    </main>
+    <footer>This was born out of boredom and a <a target="_blank" href="https://www.youtube.com/watch?v=TGe3pS5LqEw">tutorial</a> from Fireship</footer>
+</body>
+</html>
